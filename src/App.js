@@ -22,17 +22,17 @@ class App extends Component {
     super();
     
     this.state = {
-      submit: false,
+      LeaderboardLists: false,
     }
     
-    this.submit = this.submit.bind(this);
+    this.LeaderboardLists = this.LeaderboardLists.bind(this);
   }
   
-  Submit(event) {
+  LeaderboardLists(event) {
     event.preventDefault();
     
     this.setState({
-      submit: true,
+      LeaderboardLists: true,
     });
   }
 
@@ -69,30 +69,30 @@ class App extends Component {
         
         <TextField name = "activity" autoComplete = "off" label = "activity" maxlength = "8" />
         
-        <div>
-          <Button variant ="contained" color = "primary"> Submit </Button>
-          {
-            this.state.Submit
-              ? (
-                <div className="menu">
-                  <button> Menu item 1 </button>
-                  <button> Menu item 2 </button>
-                  <button> Menu item 3 </button>
-                </div>
-              )
-              : (
-                null
-              )
-          }
-          }
+        <Button variant ="contained" color = "primary"> Submit </Button>
+        <div>      
           <Card>
 
             <CardHeader>Leaderboard</CardHeader>
-            <Button>Leaderboard Lists</Button>
+            <Button>LeaderboardLists</Button>
+             {
+              this.state.LeaderboardLists
+              ? (
+              <div className="menu">
+                <button> Reusable Paper </button>
+                <button> Voluteering at the WWF </button>
+                <button> Menu item 3 </button>
+              </div>
+              )
+              : (
+              null
+              )}
+            
 
 
           </Card>
-        </div>
+        </div>          
+
 
       </div>
     );
