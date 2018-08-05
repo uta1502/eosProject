@@ -8,12 +8,21 @@ import TextField from '@material-ui/core/TextField';
 import PieChart from 'react-minimal-pie-chart';
 import { render } from "react-dom";
 import { Card, CardHeader, CardBody, CardFooter } from "react-simple-card";
+import BarChart from 'react-bar-chart';
 
 var data = {
         label: 'somethingA',
         values: [{x: 'SomethingA', y: 10}, {x: 'SomethingB', y: 4}, {x: 'SomethingC', y: 3}]
 };
 
+var dataBar = [
+  {text: 'CocaCola', value: 60}, 
+  {text: 'PwC', value: 50},
+  {text: 'Amazon', value: 30},
+];
+
+const margin = {top: 20, right: 20, bottom: 30, left: 40};
+ 
 var sort = null; 
 
 class App extends Component {
@@ -36,12 +45,17 @@ class App extends Component {
     });
   }
 
+ 
+  handleBarClick(element, id){ 
+    console.log(`The bin ${element.text} with id ${id} was clicked`);
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Enviro Protect</h1>
+          <h1 className="App-title">Welcome to Preservize</h1>
         </header>
         
         <p className="enterCode">
@@ -74,19 +88,30 @@ class App extends Component {
           <Card>
 
             <CardHeader>Leaderboard</CardHeader>
-            <Button>LeaderboardLists</Button>
+            <Button onClick ={this.LeaderboardLists}>Leaderboard Lists</Button>
              {
               this.state.LeaderboardLists
               ? (
               <div className="menu">
                 <button> Reusable Paper </button>
                 <button> Voluteering at the WWF </button>
-                <button> Menu item 3 </button>
+                <button> Buying Tesla </button>
               </div>
               )
               : (
               null
               )}
+
+              <div>
+                <div style = {{width: '50%'}}>
+                  <BarChart ylabel = 'Points'
+                  width = {500}
+                  height={500}
+                  margin = {margin}
+                  data = {dataBar}
+                  />
+                </div>
+              </div>
             
 
 
