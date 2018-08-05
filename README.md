@@ -1,2 +1,10 @@
 # eosProject
-# eosProject
+Corporate social responsibility is no longer optional. Last year, 92% of the Fortune 500 firms produced a CSR report and spent $20 billion on promoting CSR activities. But companies often overlook how to engage their employees to be sustainable in the long-term. Their plans do not impact the behavior of employees themselves, does not reward environmental sustainability and does not encourage the employee to make impact above and beyond.
+
+Preservize incentivises employees to make environmentally sustainable actions. Employees earn Preservation Points for making environmentally conscious decisions. Points are paid for by via marketing budgets of sustainable corporations who are looking to increase advertising exposure of their environmentally friendly goods to a large group of potential consumers. While revenue is generated as a % of sales made on a product, points are earned based on the green contribution made. Employees can then redeem points for work benefits (such as time-off or movie tickets) in a online portal where employers are free to determine internal redemption rates. Employer tracks, audits and compares (against other companies) their environmental impact on a transparent blockchain and can analyse employee behaviour in specific activities.
+
+Our mission is to help employers to reward employees for taking all environmentally sustainable actions. Up to 90% of marine-life now have plastic debris in their stomachs: employers can reward employees for bringing their own shopping bags. Overfishing has reduced the bluefin tuna population by 96%: employers can reward employees for purchasing sustainably caught tuna. 72% of greenhouse gases are from household consumption: employers can reward employees for switching to energy efficient globes.
+
+The use of EOSIO will allow validity (via public auditing of CSR claims), transparency (promoting of competition between companies), and scalability (simple roll-out and onboarding of companies).
+
+Preservize will enable everyone to work together to make environmentally sustainable decisions.
